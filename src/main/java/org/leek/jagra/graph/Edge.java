@@ -10,4 +10,14 @@ public abstract class Edge {
   public Edge() {
 
   }
+
+  public Vertex getNeighbor(Vertex v) {
+    if(start == v) {
+      return end;
+    } else if(end == v) {
+      return start;
+    } else {
+      return null;
+    }
+  }
 }
